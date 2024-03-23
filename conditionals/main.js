@@ -60,8 +60,8 @@ switch(color){
     break;
 }
 
-let number1 = prompt(`Enter number: (from 1 to 100) `)
-let number2 = prompt(`Enter number: (from 1 to 100) `)
+let number1 = parseInt(prompt(`Enter number: (from 1 to 100) `))
+let number2 = parseInt(prompt(`Enter number: (from 1 to 100) `))
 let operacion = prompt("Ingrese la operación (suma, resta, multiplicacion, division):").toLowerCase();
 // Realizar la operación y imprimir el resultado
 switch (operacion) {
@@ -121,4 +121,80 @@ if (persona.edad >= 18 && persona.altura > 1.10 && persona.vision > 7){
 }
 else{
   console.log(`No calificas para conducir`)
+}
+
+promptEdad = prompt('Ingresa tu edad:')
+if(promptEdad <= 12){
+  console.log('eres un infante')
+}
+else if(promptEdad > 12 && promptEdad < 19){
+  alert('Eres un adolescente')
+}
+else if(promptEdad>18 && promptEdad<46){
+  console.log('Eres un Adulto Joven')
+}
+else if(promptEdad > 45 && promptEdad <=100){
+  console.log('Eres un Adulto Mayor')
+}
+else{
+  console.log('¿Es realmente tan viejo?')
+}
+
+opcion = parseInt(prompt('ingresa un numero del 1 al 3'))
+datoNumerico = prompt('Ingresa cualquier numero:')
+if(opcion == 1){
+  alert(`El numero ingresado es: ${datoNumerico}`)
+}
+else if(opcion==2){
+  datoNumerico = datoNumerico*2
+  alert(`El doble del numero ingresado es: ${datoNumerico}`)
+}
+else if(opcion == 3){
+  datoNumerico = datoNumerico*3
+  alert(`El triple del numero ingresado es: ${datoNumerico}`)
+}
+else{
+  alert('ese valor no esta permitido')
+}
+
+//Conditionals High Levels 
+
+// Solicitar los datos iniciales
+const nombre = prompt("Ingresa tu nombre:");
+const pase = prompt("Ingresa tu pase (vip o normal):").toLowerCase();
+const entrada = prompt("¿Tienes entrada? (sí o no):").toLowerCase();
+
+// Verificar si el nombre coincide
+if (nombre === "Juan") {
+  alert(`¡Bienvenido ${nombre}!`);
+}
+else if (pase === "vip") {
+  // Verificar si tiene pase VIP
+  alert("¡Bienvenido, pase VIP!");
+} 
+else if (entrada === "sí") {
+  // Verificar si tiene entrada
+  const usarEntrada = prompt("¿Quieres usar tu entrada? (sí o no):").toLowerCase();
+  if (usarEntrada === "sí") {
+    alert("¡Bienvenido!");
+  } 
+  else {
+    alert("Gracias por visitarnos. ¡Hasta pronto!");
+  }
+} 
+else {
+  // No tiene nombre, pase VIP ni entrada
+  const comprar = prompt("¿Quieres comprar una entrada? (sí o no):").toLowerCase();
+  if (comprar === "no") {
+    alert("Gracias por visitarnos. ¡Hasta pronto!");
+  } 
+  else {
+    const dineroDisponible = parseFloat(prompt("Ingresa tu dinero disponible:"));
+    if (dineroDisponible >= 1000) {
+      alert("¡Venta exitosa! ¡Bienvenido!");
+    } 
+    else {
+      alert("Lo sentimos, no tienes suficiente dinero para comprar una entrada.");
+    }
+  }
 }
