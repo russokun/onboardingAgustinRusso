@@ -1,5 +1,5 @@
 //Conditionals Exercises: low level
-
+//1, 2 y 3.
 num1 = 4
 num2 = 5
 if(num1>num2){
@@ -13,7 +13,7 @@ else if(num2>num1){
 else{
   console.log("Los numeros Son iguales.")
 }
-
+//4 y 5.
 let fecha1 = "2018-9-2";
 let fecha2 = "2023-7-5";
 // Convertir cadenas a objetos Date
@@ -32,7 +32,7 @@ else if (valor1 < valor2){
 else{
   console.log("Las fechas son iguales");
 }
-
+//6.
 num3 = 7
 if(num1>num2 && num1>num3){
   console.log(`el numero ${num1} es el mas grande`)
@@ -43,9 +43,8 @@ else if(num2>num1 && num2>num3){
 else{
   console.log(`el numero ${num3} es el mas grande`)
 }
-
 //Conditionals Exercises: mid level
-
+//1.
 let colorIngresado = prompt(`Enter color: (red(1), blue(2) or green(3)) `)
 let color = parseInt(colorIngresado);
 switch(color){
@@ -59,7 +58,7 @@ switch(color){
     console.log(`green: “The color of nature”`)
     break;
 }
-
+//2.
 let number1 = parseInt(prompt(`Enter number: (from 1 to 100) `))
 let number2 = parseInt(prompt(`Enter number: (from 1 to 100) `))
 let operacion = prompt("Ingrese la operación (suma, resta, multiplicacion, division):").toLowerCase();
@@ -89,7 +88,7 @@ switch (operacion) {
   default:
     console.log("Operación no válida.");
 }
-
+//3.
 let persona1 = {nombre:"cristian",edad:15,altura:1.69}
 let persona2 = {nombre:"nicolas",edad:16,altura:1.75}
 let mensajeAltura, mensajeEdad
@@ -106,7 +105,7 @@ else{
   mensajeEdad = `y ${persona2.nombre} es mayor que ${persona1.nombre}`
 }
 console.log(`${mensajeAltura} ${mensajeEdad}`)
-
+//4.
 function solicitarValor(mensaje){
   let valor = prompt(mensaje)
   return valor;
@@ -122,7 +121,7 @@ if (persona.edad >= 18 && persona.altura > 1.10 && persona.vision > 7){
 else{
   console.log(`No calificas para conducir`)
 }
-
+//5.
 promptEdad = prompt('Ingresa tu edad:')
 if(promptEdad <= 12){
   console.log('eres un infante')
@@ -139,7 +138,7 @@ else if(promptEdad > 45 && promptEdad <=100){
 else{
   console.log('¿Es realmente tan viejo?')
 }
-
+//6.
 opcion = parseInt(prompt('ingresa un numero del 1 al 3'))
 datoNumerico = prompt('Ingresa cualquier numero:')
 if(opcion == 1){
@@ -156,14 +155,12 @@ else if(opcion == 3){
 else{
   alert('ese valor no esta permitido')
 }
-
 //Conditionals High Levels 
-
+//1.
 // Solicitar los datos iniciales
 const nombre = prompt("Ingresa tu nombre:");
 const pase = prompt("Ingresa tu pase (vip o normal):").toLowerCase();
 const entrada = prompt("¿Tienes entrada? (sí o no):").toLowerCase();
-
 // Verificar si el nombre coincide
 if (nombre === "Juan") {
   alert(`¡Bienvenido ${nombre}!`);
