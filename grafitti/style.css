@@ -1,0 +1,15 @@
+.graffiti {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  cursor: pointer;
+}
+
+
