@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversión De Moneda</h1>
+    <div>
+      <label for="amount">Monto:</label>
+      <input id="amount" type="number" step="0.01" placeholder="Mete Monto">
+    </div>
+    <div>
+      <label for="fromCurrency">Desde:</label>
+      <select id="fromCurrency">
+        <option value="usd">USD (Dollar)</option>
+        <option value="local">Moneda Local</option>
+      </select>
+    </div>
+    <div>
+      <label for="toCurrency">Hacia:</label>
+      <select id="toCurrency">
+        <option value="local">Moneda Local</option>
+        <option value="usd">USD (Dollar)</option>
+      </select>
+    </div>
+    <button id="convertBtn">Convert</button>
+    <button id="clearBtn">Clear</button>
+    <div>
+      <label for="convertedAmount">Monto convertido:</label>
+      <input id="convertedAmount" type="text" readonly>
+    </div>
+  </div>
+  <script src="script4.js"></script>
+</body>
+</html>
